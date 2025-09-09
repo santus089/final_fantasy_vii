@@ -13,7 +13,10 @@ const {data: characters, error} = await supabase
     <ul>
     {characters?.map(character => (
         <li>
-            {character.name}
+            {character.name} 
+            <li>
+                {character.description}
+            </li>
         </li>
     ))}
 </ul>
