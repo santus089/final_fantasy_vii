@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.57.2",
-    "astro": "^5.13.5"
+    "@tailwindcss/vite": "^4.1.13",
+    "astro": "^5.13.5",
+    "tailwindcss": "^4.1.13"
   }
 }

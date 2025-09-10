@@ -1,0 +1,82 @@
+
+<style>
+    ul {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        background-color: lightgray;
+        transition: .3s;
+        align-items: center;
+    }
+
+    ul li{
+        float: left;
+    }
+
+    ul li.left{
+        margin-right: 70px;
+    }
+
+    input{
+        padding: 6px 12px;
+        border-radius: 5px 0 0 5px;
+        border: none;
+        outline: none;
+    }
+
+    button{
+        padding: 2.3px;
+        background-color: red;
+        border-radius: 0px 5px 5px 0;
+        border: 0;
+        cursor: pointer;
+    }
+
+    ul li.right{
+        margin-right: 30px;
+        margin-left: auto; 
+        display: flex;
+        align-items: center;
+        gap: 0; 
+    }
+
+    ul li a{
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    ul li a:hover{
+        background-color: #111111;
+    }
+
+    ul li a.active{
+        background-color: green;
+    }
+
+</style>
+
+    <nav>
+        <ul>
+            <!-- logo que direciona al index -->
+            <li class="left"><a href="" class="active">Logo</a></li>
+    
+            <!-- navbar movido un poco para la derecha del logo -->
+            <li><a href="#" class="sm:hidden">Guia</a></li>
+            <li><a href="#" class="">Materia</a></li>
+            <li><a href="#" class="">Jefes</a></li>
+            <li><a href="#" class="">Consejos</a></li>
+    
+            
+            <!-- barra de busqueda y boton -->
+            <li class="right">
+                <input class="bg-white" type="text" placeholder="Buscar..">
+                <button><span class="material-symbols-rounded">search</span></button>
+            </li>
+
+        </ul>
+    </nav>

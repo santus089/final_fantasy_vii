@@ -1,23 +1,24 @@
 ---
-import BG_FF7 from '../public/BG_FF7.jpg';
+import '../styles/global.css'
 ---
 
 <!doctype html>
 <html lang="en">
     <head>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="generator" content={Astro.generator}/>
         <meta name="description" content="Guia de Final Fantasy VII (Steam)">
         <title>Guia Final Fantasy VII</title>
-
     </head>
     <body>
-        
+        <slot/>
     </body>
 </html>
 
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
     html,
     body{
         margin: 0;
@@ -28,6 +29,7 @@ import BG_FF7 from '../public/BG_FF7.jpg';
         background-position: center;
         background-attachment: fixed;
         background-size: cover;
+        font-family: sans-serif;
     }
 </style>
 
