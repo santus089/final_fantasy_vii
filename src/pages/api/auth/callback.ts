@@ -1,9 +1,12 @@
 import type { APIRoute } from "astro";
 import { supabase } from "../../../lib/supabase";
 
+export const prerender = false;
 export const GET: APIRoute = async ({ url, cookies, redirect }) => {
-  const authCode = url.searchParams.get("code");
-
+  const authCode = url.searchParams.get('code');
+  console.log("URL completa:", url.href);
+  console.log("Parámetros:", Object.fromEntries(url.searchParams.entries()));
+  
   if (!authCode) {
     return new Response("No se proporcionó ningún código", { status: 400 });
   }
@@ -23,5 +26,5 @@ export const GET: APIRoute = async ({ url, cookies, redirect }) => {
     path: "/",
   });
 
-  return redirect("/dashboard");
+  return redirect("/");
 };
